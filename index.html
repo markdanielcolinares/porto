@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+	<title>Parallax with CSS Grid</title>
+	<link rel="shortcut icon" href="code.png">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Kaushan+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!--Wrapper Start-->
+	<div class="wrapper">
+		<!--Background 1 Start-->
+		<div class="background-updown background-one">
+			<nav class="nav-one">
+					<a href="#head">Home</a>
+					<a href="#section1">About</a>
+					<a href="#section2">Portfolio</a>
+					<a href="#section3">Resume</a>
+			</nav>
+		<nav class="nav">
+			<label for="toggle">&#9776;</label>
+			<input type="checkbox" id="toggle">
+			<div class="menu">
+				<a href="#head">Home</a>
+				<a href="#section1">About</a>
+				<a href="#section2">Portfolio</a>
+				<a href="#section3">Resume</a>
+			</div>
+		</nav>
+			<div class="main-head" id="head">
+					<p> < HELLO / THERE ></p>
+					<img src="formal9.jpg" alt="pic" height="150px" width="150px">
+					<h1>I'm Mark Daniel P. Colinares</h1>
+					<p><&nbsp;&nbsp;&nbsp;WEB DEVELOPER&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;WEB DESIGNER&nbsp;&nbsp;&nbsp;></p>
+					<span>
+						<a href="#section1">MORE ABOUT ME ▼</a>
+					<span>
+			</div>
+		</div>
+		<!--Background 1 End-->
+		<section class="about" id = "section1">
+			<div class = "introduction">
+				<h3>About</h3>
+				<br>	
+				<h1>Know me well.</h1>
+				<br>
+				<img src="profile.png" alt="pic" height="120px" width="120px">
+				<br>
+				<p>— I'm a 4rth Year College Student and currently taking the Bachelor of Science and Information Technology at Pamantasan ng Lungsod ng Marikina. When I was on my 1st Year College, I met this great professor of mine who taught us all he know about programming wholeheartedly so we learned a lot from him. On our final day, he made us realize the essence and the power of self-studying. There are lots of things that I've learned by myself that our professors don't usually teach like Responsive Design and Frameworks.</p>
+				<br>
+				<br>
+				<h1>My Languages</h1>
+			</div>
+			<div class="my-languages">
+				<div class="box">
+					<h1>HTML5</h1>
+					<font color = "#FF6347"><i class="fab fa-html5 fa-4x"></font></i>
+				</div>
+				<div class="box">
+					<h1>CSS3</h1>
+					<font color = "#1e90ff"><i class="fab fa-css3 fa-4x"></font></i>
+				</div>
+				<div class="box">
+				<h1>JAVASCRIPT</h1>
+				<font color = "#E08A1E"><i class="fab fa-js-square fa-4x"></font></i>
+				</div>
+				<div class="box">
+				<h1>PHP</h1>
+				<font color = "#72A0C1"><i class="fab fa-php fa-4x"></font></i>
+				</div>
+				<div class="box">
+				<h1>VISUAL BASIC</h1>
+				<img src="vb.png" alt="" height="65" width="65">
+				</div>
+			</div>
+		</section>
+		<div class="background-mid background-two" id="section2">
+			
+		</div>
+		<div class="background-mid background-three" id="section3">
+			
+		</div>
+		<div class="background-mid background-four" id = "section4">
+			
+		</div>
+		<div class="background-updown background-five">
+			
+		</div>
+	</div>
+	<!--Wrapper End-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
+</html>
